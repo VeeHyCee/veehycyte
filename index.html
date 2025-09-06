@@ -3,14 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <title>Veehycee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-    h1 { color: #4CAF50; }
-    p { font-size: 18px; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #4CAF50, #2e7d32);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #4CAF50;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #aaa;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Veehycee’s Website!</h1>
-  <p>This site is live on veehycee.dpdns.org 🚀</p>
+
+  <header>
+    <h1>Welcome to Veehycee’s Website 🌍</h1>
+    <p>A simple and clean personal site hosted on a free domain</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi 👋 I’m Veehycee. This is my little corner on the internet where I share my journey,
+      ideas, and things I’m working on. This website is hosted completely free using DigitalPlat
+      FreeDomain + Cloudflare + GitHub Pages.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>
+      Here’s a showcase of my work (add links, screenshots, or descriptions here).
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Want to connect? Reach out via email: <a href="mailto:youremail@example.com">youremail@example.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Veehycee. Built with ❤️ and free tools.</p>
+  </footer>
+
 </body>
 </html>
