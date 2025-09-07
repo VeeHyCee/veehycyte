@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - Veehycee</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #111;
+      padding: 1rem;
+      text-align: center;
+    }
+    header a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .projects-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #111;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      background: #111;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .project-card a:hover {
+      background: #444;
+    }
+  </style>
 </head>
 <body>
-  <h1>My Projects</h1>
-  <p>This is a dedicated page for my projects.</p>
-  <a href="index.html">← Back to Home</a>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="index.html#contact">Contact</a>
+  </header>
+
+  <main>
+    <h1 style="text-align:center; margin: 2rem 0;">My Projects</h1>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Energy Monitor</h3>
+        <p>A smart metering project using PZEM-004T modules to simulate household power usage monitoring.</p>
+        <a href="https://github.com/yourusername/energy-monitor" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This very site! Designed with HTML & CSS, hosted free with GitHub Pages + Cloudflare.</p>
+        <a href="https://veehycee.dpdns.org" target="_blank">Live Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Other Project</h3>
+        <p>A placeholder for future work. Add more projects as you grow.</p>
+        <a href="#">Coming soon</a>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
